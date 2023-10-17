@@ -9,9 +9,24 @@
     --customDark: #212121;
   }
 
+* {
+    font-family: 'Roboto Mono', monospace;
+}
 html{
     background-color:#212121 !important ;
 }
-* {
-    font-family: 'Roboto Mono', monospace;
+/* Scroll animation for background */
+@keyframes scroll {
+    to {
+      background-position:0 600px;
+    }
+}
+/* Scroll animation ENDS */
+
+body{
+    min-height: 100vh; 
+    background: url(bg.jpg);
+    background-size: 1500px 600px;
+    animation: scroll 8s linear infinite;
+    background-attachment: scroll;
 }

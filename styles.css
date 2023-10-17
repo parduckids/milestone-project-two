@@ -84,3 +84,10 @@ input {
     background-color:var(--customRed);
     transition: all 0.5s;
 }
+.error-wrapper{
+    padding-top: 10px;
+}
+#error-message{
+    color: var(--customRed) !important;
+    font-size: 0.9em !important ;
+}

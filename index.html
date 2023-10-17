@@ -25,6 +25,9 @@
             <form class="p-4 text-center" onsubmit="fetchFromEntry(event)">
                 <label class="h2 block-element" for="choosen" id="entry-label">Enter your choosen word:</label>
                 <input class="mt-3" type="text" name="choosen" id="choosen" autofocus>
+                <div class="error-wrapper">
+                    <p id="error-message"></p>
+                </div>
                 <input class="custom-button" type="submit" value="Submit">
             </form>
 
@@ -36,7 +39,7 @@
         </section>
         <!-- Word Data Section -->
         <section id="word-data">
-            <h2 class="text-center display-5 p-5" id="choosen-word">Your word is:</h2>
+            <h2 class="text-center display-5 p-5" id="choosen-word"></h2>
         </section>
     </div>
 

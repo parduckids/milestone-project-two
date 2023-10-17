@@ -15,6 +15,9 @@
 html{
     background-color:#212121 !important ;
 }
+p{
+    font-weight: 200;
+}
 /* Scroll animation for background */
 @keyframes scroll {
     to {
@@ -29,4 +32,30 @@ body{
     background-size: 1500px 600px;
     animation: scroll 8s linear infinite;
     background-attachment: scroll;
+}
+
+/* Brand section */
+@keyframes flip-with-rotate {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
+html{
+    background-color:#212121 !important ;
+}
+#logo{
+    animation-name: flip-with-rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    max-width:20%;
+}
+
+.brand-section{
+    padding: 20px;
+    color: white;
 }

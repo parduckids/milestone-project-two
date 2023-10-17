@@ -21,7 +21,8 @@
         </section>
         <!-- Form section -->
         <section id="form-section">
-            <form class="p-4 text-center">
+            <!-- On form submission trigger the fetchFromEntry() function -->
+            <form class="p-4 text-center" onsubmit="fetchFromEntry(event)">
                 <label class="h2 block-element" for="choosen" id="entry-label">Enter your choosen word:</label>
                 <input class="mt-3" type="text" name="choosen" id="choosen" autofocus>
                 <input class="custom-button" type="submit" value="Submit">

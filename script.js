@@ -13,15 +13,17 @@ function fetchFromEntry(event) {
     // Access the value of the input field with the name "choosen" 
     // using the event object.
     let inputValue = event.target.choosen.value;
+    // Check if the input is empty, if not present the value on the UI
     if (inputValue != '') {
-    console.log(inputValue);
-    
-    // Present the input value on the UI
-    choosenWord.html('Your word is: <b>' + inputValue + '</b>');
-    
-    // Change label of the input after form submission
-    entryLabel.html('Try another word:');
-    }else{
+        console.log(inputValue);
+
+        // Present the input value on the UI
+        choosenWord.html('Your word is: <b>' + inputValue + '</b>');
+
+        // Change label of the input after form submission
+        entryLabel.html('Try another word:');
+    // When the input left empty present an error message to the user
+    } else {
         errorMessage.text("It can't be empty :(")
     }
 }

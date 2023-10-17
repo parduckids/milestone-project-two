@@ -1,1 +1,1 @@
-alert("Your javascript file is linked succesfully.")
+$(".green").css("background-color", "green");

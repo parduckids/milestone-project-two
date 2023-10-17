@@ -11,9 +11,10 @@
 
 * {
     font-family: 'Roboto Mono', monospace;
+    color: var(--customWhite);
 }
 html{
-    background-color:#212121 !important ;
+    background-color:var(--customDark)!important ;
 }
 p{
     font-weight: 200;
@@ -45,7 +46,9 @@ body{
     }
 }
 html{
-    background-color:#212121 !important ;
+    background-color:var(--customDark) !important ;
+    
+
 }
 #logo{
     animation-name: flip-with-rotate;
@@ -57,11 +60,28 @@ html{
 
 .brand-section{
     padding: 20px;
-    color: white;
 }
 
 /* Form section */
 
 .block-element{
     display: block;
+}
+.custom-button{
+    border-radius: 20px;
+    border: 2px solid var(--customWhite);
+    background-color: var(--customBlue);
+    transition: all 0.5s;
+    padding:5px 20px;
+}
+input {
+    border-radius: 20px;
+    border: 2px solid var(--customWhite);
+    background-color: transparent;
+    transition: all 0.5s;
+    padding:5px 20px;
+  }
+.custom-button:hover{
+    background-color:var(--customRed);
+    transition: all 0.5s;
 }

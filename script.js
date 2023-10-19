@@ -126,10 +126,10 @@ async function fetchDefinitions(word) {
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
-            // If the 'definitions' property exists and has items, log each definition to the console  
+            // If the 'definitions' property exists and has items, populate #definitions with the paragraph items 
             console.log("DEFINITIONS:");
             for (let i = 0; i < result.definitions.length; i++) {
-                console.log(result.definitions[i].definition);
+                $("#definitions").append('<p>' + result.definitions[i] + '</p>');
             }
 
         } else {

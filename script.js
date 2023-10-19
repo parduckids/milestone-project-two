@@ -120,12 +120,18 @@ async function fetchSynonyms(word) {
                 synWrapper.show();
 
             }
+            // If the request is successful return true, that will be used in the fetchFromEntry function
+            return true;
             // Error handling for 404 - not found
         } else if (response.status === 404) {
             console.error("This word doesn't exist in our database");
+            // Return false if the reuqest isn't succesfull
+            return false;
         } else {
             // General error handling 
             console.error('Request failed with status: ', response.status);
+            // Return false if the reuqest isn't succesfull
+            return false;
         }
         // Log any errors related to the fetch operation to the console    
     } catch (error) {
@@ -177,12 +183,18 @@ async function fetchDefinitions(word) {
             } else {
                 defWrapper.show();
             }
+            // If the request is successful return true, that will be used in the fetchFromEntry function
+            return true;
 
         } else if (response.status === 404) {
             console.error("This word doesn't exist in our database");
+            // Return false if the reuqest isn't succesfull
+            return false;
         } else {
             // General error handling 
             console.error('Request failed with status: ', response.status);
+            // Return false if the reuqest isn't succesfull
+            return false;
         }
         // Log any errors related to the fetch operation to the console    
     } catch (error) {
@@ -234,12 +246,18 @@ async function fetchExamples(word) {
             } else {
                 exWrapper.show();
             }
+            // If the request is successful return true, that will be used in the fetchFromEntry function
+            return true;
 
         } else if (response.status === 404) {
             console.error("This word doesn't exist in our database");
+            // Return false if the reuqest isn't succesfull
+            return false;
         } else {
             // General error handling 
             console.error('Request failed with status: ', response.status);
+            // Return false if the reuqest isn't succesfull
+            return false;
         }
         // Log any errors related to the fetch operation to the console    
     } catch (error) {

@@ -175,6 +175,7 @@ async function fetchExamples(word) {
         }
     };
     try {
+        let exWrapper = $("#examples-wrapper");
         // Send a fetch request to the API
         const response = await fetch(url, options);
         // Check if the response was successful
@@ -187,6 +188,13 @@ async function fetchExamples(word) {
             console.log("EXAMPLES:");
             for (let i = 0; i < result.examples.length; i++) {
                 $("#examples").append('<p>' + result.examples[i] + '</p>');
+            }
+            // Hide part of the view when not available information for that section
+            if (result.examples.length < 1) {
+                exWrapper.hide();
+            }
+            else {
+                exWrapper.show();
             }
 
         } else {

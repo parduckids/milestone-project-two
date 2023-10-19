@@ -224,6 +224,8 @@ function fetchFromEntry(event) {
     let entryLabel = $('#entry-label');
     // Save #error-message as a variable for later use
     let errorMessage = $("#error-message");
+    // Remove error message when the function is called
+    errorMessage.text("");
     // Prevent the default behavior of the form submission, 
     // which is to reload the page or navigate to a URL.
     event.preventDefault();

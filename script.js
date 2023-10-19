@@ -1,9 +1,9 @@
-/* Query detects this state page readyness. Code included inside $( document ).ready()
+/* Query detects this state page readiness. Code included inside $( document ).ready()
  will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
  */
-
 $( document ).ready(function() {
-    console.log( "ready!" );
+    // Use the the function after the page is loaded and generate random words from the API
+    generateRandomWords();
 });
 
 /**

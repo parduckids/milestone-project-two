@@ -85,6 +85,8 @@ async function fetchSynonyms(word) {
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
+            // First, remove all child elements of #synonyms 
+            $('#synonyms').empty();
             // If the 'synonyms' property exists and has items, populate #synonyms unordered list with the items    
             console.log("SYNONYMS:")
             for (let i = 0; i < result.synonyms.length; i++) {
@@ -126,6 +128,8 @@ async function fetchDefinitions(word) {
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
+            // First, remove all child elements of #definitions
+            $('#definitions').empty();
             // If the 'definitions' property exists and has items, populate #definitions with the paragraph items 
             console.log("DEFINITIONS:");
             for (let i = 0; i < result.definitions.length; i++) {
@@ -168,6 +172,8 @@ async function fetchExamples(word) {
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
+            // First, remove all child elements of #examples
+            $('#examples').empty();
             // If the 'definitions' property exists and has items, populate #examples with the paragraph items 
             console.log("EXAMPLES:");
             for (let i = 0; i < result.examples.length; i++) {

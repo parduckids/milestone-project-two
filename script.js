@@ -139,8 +139,12 @@ async function fetchDefinitions(word) {
             const result = await response.json();
             // First, remove all child elements of #definitions
             $('#definitions').empty();
+            // This will return 3 if there are 3 or more definitions in the array
+            // if there are less than 3 definitions, it will return the actual number of definitions.
+            let numDefinitions = Math.min(3, result.definitions.length);
             // If the 'definitions' property exists and has items, populate #definitions with the paragraph items 
-            for (let i = 0; i < result.definitions.length; i++) {
+            // Use numDefinitions instead of .length to limit the number of defitinits presented on the ui
+            for (let i = 0; i < numDefinitions; i++) {
                 $("#definitions").append('<p>' + result.definitions[i].definition + '</p>');
             }
             // Hide part of the view when not available information for that section

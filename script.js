@@ -1,10 +1,17 @@
+/* Query detects this state page readyness. Code included inside $( document ).ready()
+ will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
+ */
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
 
 /**
  * Fetches a list of random words from the Random Words API and logs them.
  * In case of errors during fetching or handling, they are logged to the console.
  */
 async function generateRandomWords() {
-    
+
     // Define the API endpoint for fetching random words. The URL includes parameters to 
     // specify the count of words to fetch and set both a minimum and maximum word length,
     // following the original Random Words API configuration.
@@ -54,22 +61,22 @@ async function fetchSynonyms(word) {
         }
     };
     try {
-         // Send a fetch request to the API
+        // Send a fetch request to the API
         const response = await fetch(url, options);
-         // Check if the response was successful
+        // Check if the response was successful
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
-             // If the 'synonyms' property exists and has items, log each synonym to the console    
-            console.log("SYNONYMS:") 
+            // If the 'synonyms' property exists and has items, log each synonym to the console    
+            console.log("SYNONYMS:")
             for (let i = 0; i < result.synonyms.length; i++) {
                 console.log(result.synonyms[i]);
             }
-        
+
         } else {
             console.log("No data found")
         }
-    // Log any errors related to the fetch operation to the console    
+        // Log any errors related to the fetch operation to the console    
     } catch (error) {
         console.error(error);
     }
@@ -95,22 +102,22 @@ async function fetchDefinitions(word) {
         }
     };
     try {
-         // Send a fetch request to the API
+        // Send a fetch request to the API
         const response = await fetch(url, options);
-         // Check if the response was successful
+        // Check if the response was successful
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
-             // If the 'definitions' property exists and has items, log each definition to the console  
+            // If the 'definitions' property exists and has items, log each definition to the console  
             console.log("DEFINITIONS:");
             for (let i = 0; i < result.definitions.length; i++) {
                 console.log(result.definitions[i].definition);
             }
-        
+
         } else {
             console.log("No data found")
         }
-    // Log any errors related to the fetch operation to the console    
+        // Log any errors related to the fetch operation to the console    
     } catch (error) {
         console.error(error);
     }
@@ -137,22 +144,22 @@ async function fetchExamples(word) {
         }
     };
     try {
-         // Send a fetch request to the API
+        // Send a fetch request to the API
         const response = await fetch(url, options);
-         // Check if the response was successful
+        // Check if the response was successful
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
-             // If the 'definitions' property exists and has items, log each definition to the console  
+            // If the 'definitions' property exists and has items, log each definition to the console  
             console.log("EXAMPLES:");
             for (let i = 0; i < result.examples.length; i++) {
                 console.log(result.examples[i]);
             }
-        
+
         } else {
             console.log("No data found")
         }
-    // Log any errors related to the fetch operation to the console    
+        // Log any errors related to the fetch operation to the console    
     } catch (error) {
         console.error(error);
     }
@@ -189,9 +196,8 @@ function fetchFromEntry(event) {
 
         // Change label of the input after form submission
         entryLabel.html('Try another word:');
-    // When the input left empty present an error message to the user
+        // When the input left empty present an error message to the user
     } else {
         errorMessage.text("It can't be empty :(")
     }
 }
-

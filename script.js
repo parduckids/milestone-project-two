@@ -90,7 +90,6 @@ async function fetchSynonyms(word) {
             // First, remove all child elements of #synonyms 
             $('#synonyms').empty();
             // If the 'synonyms' property exists and has items, populate #synonyms unordered list with the items    
-            console.log("SYNONYMS:")
             for (let i = 0; i < result.synonyms.length; i++) {
                 $("#synonyms").append('<li>' + result.synonyms[i] + '</li>');
             }
@@ -143,7 +142,6 @@ async function fetchDefinitions(word) {
             // First, remove all child elements of #definitions
             $('#definitions').empty();
             // If the 'definitions' property exists and has items, populate #definitions with the paragraph items 
-            console.log("DEFINITIONS:");
             for (let i = 0; i < result.definitions.length; i++) {
                 $("#definitions").append('<p>' + result.definitions[i].definition + '</p>');
             }
@@ -196,7 +194,6 @@ async function fetchExamples(word) {
             // First, remove all child elements of #examples
             $('#examples').empty();
             // If the 'definitions' property exists and has items, populate #examples with the paragraph items 
-            console.log("EXAMPLES:");
             for (let i = 0; i < result.examples.length; i++) {
                 $("#examples").append('<p>' + result.examples[i] + '</p>');
             }

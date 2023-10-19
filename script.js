@@ -32,7 +32,7 @@ async function generateRandomWords() {
         const result = await response.json();
 
         // Log the retrieved random words to the console
-        console.log('Your random words:', result);
+        console.log('Your random words:' + result);
 
     } catch (error) {
         // If an error occurs, log it to the console

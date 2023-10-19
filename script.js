@@ -214,6 +214,8 @@ function fetchFromEntry(event) {
 
         // Change label of the input after form submission
         entryLabel.html('Try another word:');
+        // Hide gif when the button is clicked
+        $("#typing-gif").hide();
         // When the input left empty present an error message to the user
     } else {
         errorMessage.text("It can't be empty :(")

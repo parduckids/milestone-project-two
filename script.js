@@ -195,8 +195,11 @@ async function fetchExamples(word) {
             const result = await response.json();
             // First, remove all child elements of #examples
             $('#examples').empty();
-            // If the 'definitions' property exists and has items, populate #examples with the paragraph items 
-            for (let i = 0; i < result.examples.length; i++) {
+            // This will return 4 if there are 4 or more examples in the array
+            // if there are less than 3 examples, it will return the actual number of examples
+            let numExamples = Math.min(4, result.examples.length);
+            // If the 'examples' property exists and has items, populate #examples with the paragraph items 
+            for (let i = 0; i < numExamples; i++) {
                 $("#examples").append('<p>' + result.examples[i] + '</p>');
             }
             // Hide part of the view when not available information for that section

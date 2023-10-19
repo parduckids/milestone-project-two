@@ -107,3 +107,6 @@ input {
     align-items: center;
     justify-content: center;
 }
+#preloader img{
+    width:30%;
+}

@@ -168,10 +168,10 @@ async function fetchExamples(word) {
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
-            // If the 'definitions' property exists and has items, log each definition to the console  
+            // If the 'definitions' property exists and has items, populate #examples with the paragraph items 
             console.log("EXAMPLES:");
             for (let i = 0; i < result.examples.length; i++) {
-                console.log(result.examples[i]);
+                $("#examples").append('<p>' + result.examples[i] + '</p>');
             }
 
         } else {

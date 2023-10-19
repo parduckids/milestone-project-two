@@ -33,6 +33,12 @@ async function generateRandomWords() {
 
         // Log the retrieved random words to the console
         console.log('Your random words:' + result);
+        // Loop through the results array
+        for (let i = 0; i < result.length; i++) {
+            // For each word in the results, append it to the 'random-word-list' as a list item
+            // Each word is wrapped in an anchor tag for later functionality
+            $("#random-word-list").append('<li><a href="#">' + result[i] + '</a></li>');
+        }
 
     } catch (error) {
         // If an error occurs, log it to the console

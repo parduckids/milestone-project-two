@@ -91,3 +91,7 @@ input {
     color: var(--customRed) !important;
     font-size: 0.9em !important ;
 }
+/* Hide word-data until the fetchFromEntry function is called */
+#word-data{
+    display: none;
+}

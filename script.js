@@ -216,6 +216,8 @@ function fetchFromEntry(event) {
         entryLabel.html('Try another word:');
         // Hide gif when the button is clicked
         $("#typing-gif").hide();
+        // Show word-data section when the function is called
+        $("#word-data").show();
         // When the input left empty present an error message to the user
     } else {
         errorMessage.text("It can't be empty :(")

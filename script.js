@@ -120,9 +120,12 @@ async function fetchSynonyms(word) {
                 synWrapper.show();
 
             }
-
+            // Error handling for 404 - not found
+        } else if (response.status === 404) {
+            console.error("This word doesn't exist in our database");
         } else {
-            console.log("No data found")
+            // General error handling 
+            console.error('Request failed with status: ', response.status);
         }
         // Log any errors related to the fetch operation to the console    
     } catch (error) {
@@ -175,8 +178,11 @@ async function fetchDefinitions(word) {
                 defWrapper.show();
             }
 
+        } else if (response.status === 404) {
+            console.error("This word doesn't exist in our database");
         } else {
-            console.log("No data found")
+            // General error handling 
+            console.error('Request failed with status: ', response.status);
         }
         // Log any errors related to the fetch operation to the console    
     } catch (error) {
@@ -229,8 +235,11 @@ async function fetchExamples(word) {
                 exWrapper.show();
             }
 
+        } else if (response.status === 404) {
+            console.error("This word doesn't exist in our database");
         } else {
-            console.log("No data found")
+            // General error handling 
+            console.error('Request failed with status: ', response.status);
         }
         // Log any errors related to the fetch operation to the console    
     } catch (error) {

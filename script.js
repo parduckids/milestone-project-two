@@ -1,5 +1,40 @@
 
 /**
+ * Fetches a list of random words from the Random Words API and logs them.
+ * In case of errors during fetching or handling, they are logged to the console.
+ */
+async function generateRandomWords() {
+    
+    // Define the API endpoint for fetching random words. The URL includes parameters to 
+    // specify the count of words to fetch and set both a minimum and maximum word length,
+    // following the original Random Words API configuration.
+    const url = 'https://random-words5.p.rapidapi.com/getMultipleRandom?count=4&minLength=5&maxLength=8';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'fe209f256emshc114ceae6c6c116p1d872djsn27d575353cc3',
+            'X-RapidAPI-Host': 'random-words5.p.rapidapi.com'
+        }
+    };
+
+    try {
+        // Send the fetch request to the API
+        const response = await fetch(url, options);
+
+        // Parse and store the JSON response
+        const result = await response.json();
+
+        // Log the retrieved random words to the console
+        console.log('Your random words:', result);
+
+    } catch (error) {
+        // If an error occurs, log it to the console
+        console.error(error);
+    }
+};
+
+
+/*
  * Fetches synonyms for a given word from the WordsAPI.
  * 
  * The function takes a word as input and constructs a URL to fetch synonyms for the word

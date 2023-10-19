@@ -129,7 +129,7 @@ async function fetchDefinitions(word) {
             // If the 'definitions' property exists and has items, populate #definitions with the paragraph items 
             console.log("DEFINITIONS:");
             for (let i = 0; i < result.definitions.length; i++) {
-                $("#definitions").append('<p>' + result.definitions[i] + '</p>');
+                $("#definitions").append('<p>' + result.definitions[i].definition + '</p>');
             }
 
         } else {

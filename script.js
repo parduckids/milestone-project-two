@@ -89,7 +89,7 @@ async function fetchSynonyms(word) {
             $('#synonyms').empty();
              // This will return 5 if there are 5 or more synonyms in the array
             // if there are less than 5 synonyms, it will return the actual number of synonyms
-            let numSynonyms = Math.min(4, result.synonyms.length);
+            let numSynonyms = Math.min(5, result.synonyms.length);
             // If the 'synonyms' property exists and has items, populate #synonyms unordered list with the items    
             for (let i = 0; i < numSynonyms; i++) {
                 $("#synonyms").append('<li>' + result.synonyms[i] + '</li>');

@@ -85,10 +85,10 @@ async function fetchSynonyms(word) {
         if (response.ok) {
             // Parse the response as JSON
             const result = await response.json();
-            // If the 'synonyms' property exists and has items, log each synonym to the console    
+            // If the 'synonyms' property exists and has items, populate #synonyms unordered list with the items    
             console.log("SYNONYMS:")
             for (let i = 0; i < result.synonyms.length; i++) {
-                console.log(result.synonyms[i]);
+                $("#synonyms").append('<li>' + result.synonyms[i] + '</li>');
             }
 
         } else {

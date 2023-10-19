@@ -95,3 +95,15 @@ input {
 #word-data{
     display: none;
 }
+/* Preloader styling */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:var(--customDark);
+    z-index: 9999999;
+    align-items: center;
+    justify-content: center;
+}

@@ -295,7 +295,7 @@ async function fetchFromEntry(event) {
         // Check if all functions retured false at the same time
         // When no data is returned, present error message to the user
         if (!synonymExists && !exampleExists && !definitionExists) {
-            errorMessage.text("doesn't exist in our database :(");
+            errorMessage.text("The word:"+ "'" + inputValue + "'" + "doesn't exist in our database :(");
             event.target.choosen.value = ''; // Clear the input field
             return; // Exit the function
         // If any of the function returned true continue the fetchFromEntry function

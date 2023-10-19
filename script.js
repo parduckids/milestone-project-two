@@ -1,9 +1,21 @@
 /* Query detects this state page readiness. Code included inside $( document ).ready()
  will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
  */
-$( document ).ready(function() {
+$(document).ready(function() {
     // Use the the function after the page is loaded and generate random words from the API
     generateRandomWords();
+    // Add a click event listener to anchor tags within the 'random-word-list' element
+    $("#random-word-list").on("click", "a", function(event) {
+    // Prevent the default link functionality.
+    event.preventDefault();
+    
+    // Set the clicked word as the value of the 'choosen' input field
+    $("#choosen").val($(this).text());
+    
+    // Trigger a click on the 'custom-button'
+    $(".custom-button").click();
+});
+
 });
 
 /**

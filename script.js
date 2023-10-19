@@ -122,6 +122,8 @@ async function fetchDefinitions(word) {
         }
     };
     try {
+        // Create a variable for definitions-wrapper for later use
+        let defWrapper = $("#definitions-wrapper")
         // Send a fetch request to the API
         const response = await fetch(url, options);
         // Check if the response was successful
@@ -134,6 +136,13 @@ async function fetchDefinitions(word) {
             console.log("DEFINITIONS:");
             for (let i = 0; i < result.definitions.length; i++) {
                 $("#definitions").append('<p>' + result.definitions[i].definition + '</p>');
+            }
+            // Hide part of the view when not available information for that section
+            if (result.definitions.length < 1) {
+                defWrapper.hide();
+            }
+            else {
+                defWrapper.show();
             }
 
         } else {

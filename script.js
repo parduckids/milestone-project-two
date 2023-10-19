@@ -1,22 +1,41 @@
 /* Query detects this state page readiness. Code included inside $( document ).ready()
  will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
  */
-$(document).ready(function() {
+$(document).ready(function () {
     // Use the the function after the page is loaded and generate random words from the API
     generateRandomWords();
     // Add a click event listener to anchor tags within the 'random-word-list' element
-    $("#random-word-list").on("click", "a", function(event) {
-    // Prevent the default link functionality.
-    event.preventDefault();
-    
-    // Set the clicked word as the value of the 'choosen' input field
-    $("#choosen").val($(this).text());
-    
-    // Trigger a click on the 'custom-button'
-    $(".custom-button").click();
-});
+    $("#random-word-list").on("click", "a", function (event) {
+        // Prevent the default link functionality.
+        event.preventDefault();
+
+        // Set the clicked word as the value of the 'choosen' input field
+        $("#choosen").val($(this).text());
+
+        // Trigger a click on the 'custom-button'
+        $(".custom-button").click();
+    });
 
 });
+
+
+// Add a preloader to the page with a fade out effect after a short delay
+function callPreloader() {
+    // Display the preloader element with a flex layout
+    $('#preloader').css('display', 'flex');
+
+    // Set a delay of 1.5 seconds
+    setTimeout(function () {
+        // Fade out function 
+        $('#preloader').fadeOut('slow', function () {
+            // Hide preloader after the fade out effect
+            $(this).hide();
+            
+            // Allow scrolling again
+            $('body').css('overflow', 'auto');
+        });
+    }, 1500);
+}
 
 /**
  * Fetches a list of random words from the Random Words API and logs them.
@@ -87,7 +106,7 @@ async function fetchSynonyms(word) {
             const result = await response.json();
             // First, remove all child elements of #synonyms 
             $('#synonyms').empty();
-             // This will return 5 if there are 5 or more synonyms in the array
+            // This will return 5 if there are 5 or more synonyms in the array
             // if there are less than 5 synonyms, it will return the actual number of synonyms
             let numSynonyms = Math.min(5, result.synonyms.length);
             // If the 'synonyms' property exists and has items, populate #synonyms unordered list with the items    
@@ -97,10 +116,9 @@ async function fetchSynonyms(word) {
             // Hide part of the view when not available information for that section
             if (result.synonyms.length < 1) {
                 synWrapper.hide();
-            }
-            else {
+            } else {
                 synWrapper.show();
-                
+
             }
 
         } else {
@@ -153,8 +171,7 @@ async function fetchDefinitions(word) {
             // Hide part of the view when not available information for that section
             if (result.definitions.length < 1) {
                 defWrapper.hide();
-            }
-            else {
+            } else {
                 defWrapper.show();
             }
 
@@ -208,8 +225,7 @@ async function fetchExamples(word) {
             // Hide part of the view when not available information for that section
             if (result.examples.length < 1) {
                 exWrapper.hide();
-            }
-            else {
+            } else {
                 exWrapper.show();
             }
 
@@ -245,6 +261,8 @@ function fetchFromEntry(event) {
     let inputValue = event.target.choosen.value;
     // Check if the input is empty, if not present the value on the UI
     if (inputValue != '') {
+        // Call preloader when the input isn't empty
+        callPreloader();
         // If the input is not empty, use the fetchSynonyms, fetchDefinitions, fetchExamples functions to fetch data from the api using the input value
         fetchSynonyms(inputValue);
         fetchDefinitions(inputValue);

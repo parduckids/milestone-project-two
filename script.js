@@ -79,6 +79,8 @@ async function fetchSynonyms(word) {
         }
     };
     try {
+        // Create a variable for synonyms-wrapper for later use
+        let synWrapper = $("#synonyms-wrapper");
         // Send a fetch request to the API
         const response = await fetch(url, options);
         // Check if the response was successful
@@ -91,6 +93,14 @@ async function fetchSynonyms(word) {
             console.log("SYNONYMS:")
             for (let i = 0; i < result.synonyms.length; i++) {
                 $("#synonyms").append('<li>' + result.synonyms[i] + '</li>');
+            }
+            // Hide part of the view when not available information for that section
+            if (result.synonyms.length < 1) {
+                synWrapper.hide();
+            }
+            else {
+                synWrapper.show();
+                
             }
 
         } else {
@@ -175,6 +185,7 @@ async function fetchExamples(word) {
         }
     };
     try {
+        // Create a variable for examples-wrapper for later use
         let exWrapper = $("#examples-wrapper");
         // Send a fetch request to the API
         const response = await fetch(url, options);

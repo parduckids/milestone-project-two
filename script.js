@@ -269,8 +269,8 @@ async function fetchExamples(word) {
 
 
 
-// A function that gets triggered when the form is submitted.
-function fetchFromEntry(event) {
+// An async function that gets triggered when the form is submitted. 
+async function fetchFromEntry(event) {
     // Save #choosen-word as a variable for later use
     let choosenWord = $('#choosen-word');
     // Save #entry-label as a variable for later use
@@ -288,12 +288,21 @@ function fetchFromEntry(event) {
     let inputValue = event.target.choosen.value;
     // Check if the input is empty, if not present the value on the UI
     if (inputValue != '') {
+        // Await makes the functions  pause until the fetch functions are completed and returned a promise
+        let synonymExists = await fetchSynonyms(inputValue);
+        let exampleExists = await fetchExamples(inputValue);
+        let definitionExists = await fetchDefinitions(inputValue);
+        // Check if all functions retured false at the same time
+        // When no data is returned, present error message to the user
+        if (!synonymExists && !exampleExists && !definitionExists) {
+            errorMessage.text("doesn't exist in our database :(");
+            event.target.choosen.value = ''; // Clear the input field
+            return; // Exit the function
+        // If any of the function returned true continue the fetchFromEntry function
+        } else{
         // Call preloader when the input isn't empty
         callPreloader();
         // If the input is not empty, use the fetchSynonyms, fetchDefinitions, fetchExamples functions to fetch data from the api using the input value
-        fetchSynonyms(inputValue);
-        fetchDefinitions(inputValue);
-        fetchExamples(inputValue);
 
         // Present the input value on the UI
         choosenWord.html('Your word is: <b>' + inputValue + '</b>');
@@ -307,6 +316,7 @@ function fetchFromEntry(event) {
         // Show word-data section when the function is called
         $("#word-data").show();
         // When the input left empty present an error message to the user
+        }
     } else {
         errorMessage.text("It can't be empty :(")
     }

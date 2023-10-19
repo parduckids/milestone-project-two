@@ -273,6 +273,8 @@ function fetchFromEntry(event) {
 
         // Change label of the input after form submission
         entryLabel.html('Try another word:');
+        // Clear the input
+        event.target.choosen.value = '';
         // Hide gif when the button is clicked
         $("#typing-gif").hide();
         // Show word-data section when the function is called

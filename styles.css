@@ -98,6 +98,10 @@ input {
 #bottom-space{
     height: 100px;
 }
+
+#choosen-word b{
+    color: var(--customRed);
+}
 /* Small screens (up to 576px) */
 @media screen and (max-width: 576px) {
     #logo{

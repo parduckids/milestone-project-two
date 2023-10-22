@@ -97,7 +97,9 @@ input {
     width:30%;
 }
 
-
+#bottom-space{
+    height: 100px;
+}
 /* Small screens (up to 576px) */
 @media screen and (max-width: 576px) {
     #logo{
@@ -152,3 +154,4 @@ input {
         margin-bottom:10px;
     }
   }
+

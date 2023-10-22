@@ -93,9 +93,7 @@ input {
     justify-content: center;
     display:none;
 }
-#preloader img{
-    width:30%;
-}
+
 
 #bottom-space{
     height: 100px;
@@ -113,6 +111,9 @@ input {
       }
     #choosen-word{
         padding: 1em !important;
+    }
+    #preloader img{
+        width:60%;
     }
     
   }
@@ -142,6 +143,9 @@ input {
     #typing-gif {
         width: 60%;
     }
+    #preloader img{
+        width:50%;
+    }
   }
   
   /* Large screens (769px to 992px) */
@@ -152,6 +156,9 @@ input {
     #typing-gif {
         width: 40%;
     }
+    #preloader img{
+        width:40%;
+    }
   }
   
   /* Very Large screens (993px and above) */
@@ -161,6 +168,9 @@ input {
     }
     #typing-gif{
         width: 30%;
+    }
+    #preloader img{
+        width:30%;
     }
   }
   /* Target special screen size for entry input */

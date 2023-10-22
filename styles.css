@@ -40,9 +40,7 @@ html{
     background-color:var(--customDark) !important ;
 
 }
-#logo{
-    max-width:20%;
-}
+
 
 .brand-section{
     padding: 20px;
@@ -98,3 +96,59 @@ input {
 #preloader img{
     width:30%;
 }
+
+
+/* Small screens (up to 576px) */
+@media screen and (max-width: 576px) {
+    #logo{
+        max-width:60%;
+    }
+    #typing-gif {
+        width: 80%;
+    }
+    #entry-label {
+        font-size: 1.2rem;
+      }
+    #choosen-word{
+        padding: 1em !important;
+    }
+  }
+  
+  /* Medium screens (577px to 768px) */
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    #logo{
+        max-width:50%;
+    }
+    #typing-gif {
+        width: 60%;
+    }
+  }
+  
+  /* Large screens (769px to 992px) */
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    #logo{
+        max-width:40%;
+    }
+    #typing-gif {
+        width: 40%;
+    }
+  }
+  
+  /* Very Large screens (993px and above) */
+  @media screen and (min-width: 993px) {
+    #logo{
+        max-width:30%;
+    }
+    #typing-gif{
+        width: 30%;
+    }
+  }
+  /* Target special screen size for entry input */
+  @media screen and (max-width: 426px) {
+    #entry-input{
+        margin-bottom:10px;
+    }
+    #choosen{
+        margin-bottom:10px;
+    }
+  }

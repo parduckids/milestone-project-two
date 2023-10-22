@@ -4,7 +4,7 @@
 $(document).ready(function () {
     // Add autofocus to the input field when not on a touch screen device
     if (!('ontouchstart' in document.documentElement)) {
-        $('#choosen').attr('autofocus', 'autofocus');
+        $('#choosen').focus();
     }
     // Use the the function after the page is loaded and generate random words from the API
     generateRandomWords();

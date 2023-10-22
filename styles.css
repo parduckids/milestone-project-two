@@ -126,6 +126,13 @@ input {
         list-style-type: none !important;
         padding: 4px;
     }
+    .random-word-wrapper{
+        padding: 20px;
+    }
+    .random-word-wrapper p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
   }
   /* Medium screens (577px to 768px) */
   @media screen and (min-width: 577px) and (max-width: 768px) {

@@ -292,6 +292,8 @@ async function fetchFromEntry(event) {
     let inputValue = event.target.choosen.value;
     // Check if the input is empty, if not present the value on the UI
     if (inputValue != '') {
+        // Remove focus from the input after submission
+        $('#choosen').focus();
         // Call preloader when the input isn't empty
         callPreloader();
         // Await makes the functions  pause until the fetch functions are completed and returned a promise

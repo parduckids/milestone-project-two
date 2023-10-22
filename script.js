@@ -288,6 +288,8 @@ async function fetchFromEntry(event) {
     let inputValue = event.target.choosen.value;
     // Check if the input is empty, if not present the value on the UI
     if (inputValue != '') {
+        // Call preloader when the input isn't empty
+        callPreloader();
         // Await makes the functions  pause until the fetch functions are completed and returned a promise
         let synonymExists = await fetchSynonyms(inputValue);
         let exampleExists = await fetchExamples(inputValue);
@@ -300,8 +302,7 @@ async function fetchFromEntry(event) {
             return; // Exit the function
         // If any of the function returned true continue the fetchFromEntry function
         } else{
-        // Call preloader when the input isn't empty
-        callPreloader();
+        
         // If the input is not empty, use the fetchSynonyms, fetchDefinitions, fetchExamples functions to fetch data from the api using the input value
 
         // Present the input value on the UI

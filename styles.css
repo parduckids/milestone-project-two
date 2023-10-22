@@ -30,7 +30,7 @@ p{
 body{
     min-height: 100vh; 
     background: url(bg.jpg);
-    background-size: 1500px 600px;
+    background-size: auto 600px;
     animation: scroll 8s linear infinite;
     background-attachment: scroll;
 }

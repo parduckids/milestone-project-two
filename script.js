@@ -289,7 +289,7 @@ async function fetchFromEntry(event) {
 
     // Access the value of the input field with the name "choosen" 
     // using the event object.
-    let inputValue = event.target.choosen.value;
+    let inputValue = event.target.choosen.value.trim();
     // Check if the input is empty, if not present the value on the UI
     if (inputValue != '') {
         // Remove focus from the input after submission

@@ -114,8 +114,19 @@ input {
     #choosen-word{
         padding: 1em !important;
     }
+    
   }
-  
+  /* from medium screens (up to 768px) */
+  @media screen and (max-width: 768px) {
+    #random-word-list{
+        display: flex !important;
+        padding-left: 0 !important;
+    }
+    #random-word-list li{
+        list-style-type: none !important;
+        padding: 4px;
+    }
+  }
   /* Medium screens (577px to 768px) */
   @media screen and (min-width: 577px) and (max-width: 768px) {
     #logo{

@@ -2,6 +2,10 @@
  will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
  */
 $(document).ready(function () {
+    // Add autofocus to the input field when not on a touch screen device
+    if (!('ontouchstart' in document.documentElement)) {
+        $('#choosen').attr('autofocus', 'autofocus');
+    }
     // Use the the function after the page is loaded and generate random words from the API
     generateRandomWords();
     // Add a click event listener to anchor tags within the 'random-word-list' element

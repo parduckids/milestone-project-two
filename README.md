@@ -71,7 +71,9 @@
 **Preloader with animated star gif:**
 
 * To ensure that the loading time is less noticable and maintain the project's cohesive visual theme.
+
 <br>
+
 <img src="https://i.gifer.com/XZ5V.gif"  width="200"/>
 
 **Background animation:**
@@ -96,6 +98,7 @@
 **Random Word Generation:** 
 * Upon loading the application, a selection of intriguing and random words is presented. Users can click on these words to explore their meanings and usage.
 <br>
+
 <img src="assets/rm-images/random-words.png"  width="400"/>
 
 **Fetching Word Information:** 
@@ -119,6 +122,7 @@
 **User-Friendly Interface:** 
 * The user interface is designed for simplicity and ease of use. After the word is submitted, the interface dynamically updates to display the entered word, its synonyms, definitions, and examples. This seamless transition enriches the user experience, making it easy for users to explore and understand the world of words.
 <br>
+
 ![image](assets/rm-images/background-anim.gif)
 
 # Deployment:

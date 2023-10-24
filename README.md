@@ -7,7 +7,7 @@
 
 
 <!-- Screenshot on different devices  -->
-![image](screens.gif)
+![image](assets/rm-images/screens.gif)
 
 ## This website has been created as my Milestone Project 2 submission for the Code Institute's Diploma in Web Application Development course. 
 

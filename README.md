@@ -4,6 +4,10 @@
 * [GitHub Repository](https://github.com/parduckids/milestone-project-two)
 
 ![image](assets/rm-images/screens.gif)
+
+
+## The idea: 
+
 ### 'Word Wide' is a functional and minimalist synonym website. It stands out with a unique, quirky style, featuring animated background. Breaking away from the standard format of synonym sites; it provides word definitions, example words, synonyms based on user input, and even included a fun random word generator. I've used WordsAPI and Random Words API for synonyms and random words to make it interactive and engaging.
 
 ### This website has been created as my **Milestone Project 2** submission for the Code Institute's Diploma in Web Application Development course using HTML CSS and Javascript(jQuery). 
@@ -30,6 +34,7 @@
 **Mobile User**
 * As a mobile user, I want the website to maintain its design while ensuring smooth and responsive navigation on my smartphone, so I can access synonyms on the go and enjoy the unique experience.
 
+---
 
 # Design:
 
@@ -69,6 +74,19 @@
 *  This animation uses keyframes to create the illusion of the background image moving down the page. By smoothly transitioning the background position, it adds a dynamic and visually appealing element to the design.
 
 ![image](assets/rm-images/background-anim.gif)
+
+# Deployment:
+
+- The website built with the help of [gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template)  that Code Institute provided for this project and [Gitpod](https://www.gitpod.io/) that is an online code editor provided by [Github](https://github.com/). 
+- Using Github and Github Pages to create a live link for the website.
+
+
+- Guide for running the code on [Gitpod](https://www.gitpod.io/)
+  - ![Gitpod tutorial gif](assets/rm-images/gitpod2.gif)
+
+- Step by step guide for creating a live link with the help of [Github Pages](https://pages.github.com/)
+  - ![Github pages tutorial gif](assets/rm-images/pages2.gif)
+  
 
 
 

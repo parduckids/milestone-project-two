@@ -16,14 +16,14 @@
     </div>
     <div class="container">
         <!-- Brand section -->
-        <section class="brand-section">
+        <div class="brand-section">
             <div class="w-100 text-center">
                 <a href="https://parduckids.github.io/milestone-project-two/"><img src="assets/images/logo.png" id="logo" alt="Word Wide logo"></a>
                 <p class="text-center p-1">Synonyms, Citations, Wordplay Invitations.</p>
             </div>
-        </section>
+        </div>
         <!-- Form section -->
-        <section id="form-section">
+        <div id="form-section">
             <!-- On form submission trigger the fetchFromEntry() function -->
             <form class="p-4 text-center" onsubmit="fetchFromEntry(event)">
                 <label class="h2 block-element" for="choosen" id="entry-label">Enter your choosen word:</label>
@@ -40,10 +40,10 @@
                 <img id="typing-gif" src="https://media.giphy.com/media/LPf9Dx2Cmd3sjVxvJA/giphy.gif"
                     alt="Monster hands typing on the keyboard">
             </div>
-        </section>
+        </div>
         <!-- Word Data Section -->
         <section id="word-data">
-            <h2 class="text-center display-5 p-5" id="choosen-word"></h2>
+            <h2 class="text-center display-5 p-5" id="choosen-word">Your word is: </h2>
             <div class="row">
                 <div class="col-md-3 order-md-0 order-1 random-word-wrapper">
                     <p>Today's word selection:</p>

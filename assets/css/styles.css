@@ -29,7 +29,7 @@ p{
 
 body{
     min-height: 100vh; 
-    background: url(assets/images/bg.jpg);
+    background: url(/milestone-project-two/assets/images/bg.jpg);
     background-size: auto 600px;
     animation: scroll 8s linear infinite;
     background-attachment: scroll;

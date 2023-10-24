@@ -125,6 +125,15 @@
 
 ![image](assets/rm-images/background-anim.gif)
 
+
+# Extra features for the future:
+
+* Now the Random word API limited to 4 result, I would like to add a 'more...' button that shows an extra for every time it's been clicked, as well as refreshing the results when too many is present. 
+* The WordAPI has many other types of data connected to words, I would like to extend the functionality of the website to show more
+* WordAPI is currently restricted for 3/4/5 results, I would like to add a 'read more..' button to show more definition, synonym and example for the user.
+* Implementing mini games with words for younger generation, or anyone who likes to play word games !
+
+
 # Deployment:
 
 - The website built with the help of [gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template)  that Code Institute provided for this project and [Gitpod](https://www.gitpod.io/) that is an online code editor provided by [Github](https://github.com/). 

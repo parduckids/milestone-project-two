@@ -58,6 +58,9 @@
 * Created with [Canva](https://canva.com)
 * The logo features a globe, a star, and the text "Word Wide." This design plays on the word "worldwide," emphasizing the global reach of the synonym web application and adding a unique visual element to the project's branding.
 
+**Favicon**
+* ![image](assets/rm-images/typography.png)
+
 
 ## Color scheme
 ![image](assets/rm-images/color-scheme.png)
@@ -68,11 +71,54 @@
 **Preloader with animated star gif:**
 
 * To ensure that the loading time is less noticable and maintain the project's cohesive visual theme.
-<img src="https://i.gifer.com/XZ5V.gif" alt="preloading" width="200"/>
+<br>
+<img src="https://i.gifer.com/XZ5V.gif"  width="300"/>
 <!-- add image here -->
 **Background animation:**
 *  This animation uses keyframes to create the illusion of the background image moving down the page. By smoothly transitioning the background position, it adds a dynamic and visually appealing element to the design.
 
+![image](assets/rm-images/background-anim.gif)
+
+---
+
+# Features
+**Word Input:**
+* Users can input a word of their choice into the application, making it easy to search for specific terms or explore new vocabulary.
+
+* First load:
+<br>
+<img src="assets/rm-images/input-start.png"  width="400"/>
+
+* From second load:
+<br>
+<img src="assets/rm-images/input-later.png"  width="400"/>
+
+**Random Word Generation:** 
+* Upon loading the application, a selection of intriguing and random words is presented. Users can click on these words to explore their meanings and usage.
+<br>
+<img src="assets/rm-images/random-words.png"  width="400"/>
+
+**Fetching Word Information:** 
+* After a user submits a word, the application fetches comprehensive information about the term, including:
+
+**Synonyms:** 
+* The application provides a list of synonyms, helping users discover alternative words with similar meanings.
+<br>
+<img src="assets/rm-images/similar.png"  width="400"/>
+
+**Definitions:**
+* Clear and concise definitions are offered, allowing users to gain a better understanding of the word's precise meaning and usage.
+<br>
+<img src="assets/rm-images/definitions.png"  width="400"/>
+
+**Examples:**
+* The application supplies usage examples, providing real-world context for the word's application in sentences.
+<br>
+<img src="assets/rm-images/examples.png"  width="400"/>
+
+**User-Friendly Interface:** 
+* The user interface is designed for simplicity and ease of use. After the word is submitted, the interface dynamically updates to display the entered word, its synonyms, definitions, and examples. This seamless transition enriches the user experience, making it easy for users to explore and understand the world of words.
+<br>
 ![image](assets/rm-images/background-anim.gif)
 
 # Deployment:

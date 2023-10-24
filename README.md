@@ -33,3 +33,44 @@
 
 **Mobile User**
 * As a mobile user, I want the website to maintain its design while ensuring smooth and responsive navigation on my smartphone, so I can access synonyms on the go and enjoy the unique experience.
+
+
+# Design:
+
+## Typography
+* I use '[Roboto Mono]' throughout the website , which carries the same contemporary and unassuming design as the rest of the "Roboto" family. Its clean lines and minimalistic letterforms create a modern and professional appearance.
+* The font is hosted on https://fonts.google.com/
+
+## Imagery
+**Typing Monster Gif:**
+
+* Source: [Gifer](https://gifer.com)
+* I used an animated gif of a playful and unique typing monster hand to encourage users to engage with the quirky design of the project.
+
+**Background with Abstract Shapes:**
+
+* I created the background image on [Canva](https://canva.com), a graphic design platform.
+* The background features a dynamic composition of abstract shapes, providing a visually stimulating backdrop that complements the engaging design of the project with added css scrolling animation.
+
+**Word Wide Logo:**
+
+* Created with [Canva](https://canva.com)
+* The logo features a globe, a star, and the text "Word Wide." This design plays on the word "worldwide," emphasizing the global reach of the synonym web application and adding a unique visual element to the project's branding.
+
+
+## Color scheme
+![image](assets/rm-images/color-scheme.png)
+<!-- write about these colors and the choice  -->
+
+## Animations and preloaders:
+
+**Preloader with animated star gif:**
+
+* To ensure that the loading time is less noticable and maintain the project's cohesive visual theme.
+<!-- add image here -->
+**Background scroll animation:**
+*  This animation uses keyframes to create the illusion of the background image moving down the page. By smoothly transitioning the background position, it adds a dynamic and visually appealing element to the design.
+<!-- add image here -->
+
+
+

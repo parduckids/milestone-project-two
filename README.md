@@ -15,23 +15,55 @@
 
 ---
 
+## Contents
+- [User experience](#user-experience)
+  * [User Stories](#user-stories)
+    + [Regular User](#regular-user)
+    + [Language Enthusiast](#language-enthusiast)
+    + [Educator](#educator)
+    + [Mobile User](#mobile-user)
+- [Design](#design)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+  * [Animations And Preloaders](#animations-and-preloaders)
+- [Features](#features)
+  * [Word Input](#word-input)
+  * [Random Word Generation](#random-word-generation)
+  * [Fetching Word Information](#fetching-word-information)
+  * [Synonyms](#synonyms)
+  * [Definitions](#definitions)
+  * [Examples](#example-usage)
+  * [User friendly Interface](#user-friendly-interface)
+- [Extra features for the future](#extra-features-for-the-future)
+- [Tools & Documentations](#tools--documentations)
+  * [Version Control & Hosting](#version-control--hosting)
+  * [Design & Image editing](#design--image-editing)
+  * [Search Engine Optimisation 'SEO'](#seo)
+  * [Documentations](#documentations)
+  * [Application Programming Interfaces 'API's'](#apis-application-programming-interface)
+- [Deployment](#deployment)  
+- [Testing](#testing)
+  * [Manual Testing]()
+  * [Testing tools]()
+---
+
 # User Experience:
 ## User Stories:
 
-**Regular User**
+### Regular User
 * As a regular user, I want to be able to search for synonyms quickly, so I can find the right word efficiently while enjoying the quirky design.
 * As a regular user, I want to see word definitions alongside synonyms so I can understand the word's context better.
 * As a regular user, I want the option to explore similar words, helping me find alternatives that suit my writing style.
 
-**Language Enthusiast**
+### Language Enthusiast
 * As a language enthusiast, I'd like the website to provide me with detailed word information, including etymology and usage examples, in a format that enhances my vocabulary exploration.
 * As a language enthusiast, I want a "Random Word" feature to expand my word knowledge and challenge my language skills.
 
-**Educator**
+### Educator
 * As an educator, I need the website to be ad-free and straightforward to navigate, ensuring that students aren't distracted during their synonym searches while enjoying the website's engaging design.
 * As an educator, I'd appreciate the ability to create lists of words and their synonyms for use in my teaching materials.
 
-**Mobile User**
+### Mobile User
 * As a mobile user, I want the website to maintain its design while ensuring smooth and responsive navigation on my smartphone, so I can access synonyms on the go and enjoy the unique experience.
 
 ---
@@ -84,7 +116,8 @@
 ---
 
 # Features
-**Word Input:**
+
+### Word Input:
 * Users can input a word of their choice into the application, making it easy to search for specific terms or explore new vocabulary.
 
 * First load:
@@ -95,31 +128,31 @@
 <br>
 <img src="assets/rm-images/input-later.png"  width="400"/>
 
-**Random Word Generation:** 
+### Random Word Generation:
 * Upon loading the application, a selection of intriguing and random words is presented. Users can click on these words to explore their meanings and usage.
 <br>
 
 <img src="assets/rm-images/random-words.png"  width="400"/>
 
-**Fetching Word Information:** 
+### Fetching Word Information: 
 * After a user submits a word, the application fetches comprehensive information about the term, including:
 
-**Synonyms:** 
+### Synonyms:
 * The application provides a list of synonyms, helping users discover alternative words with similar meanings.
 <br>
 <img src="assets/rm-images/similar.png"  width="400"/>
 
-**Definitions:**
+### Definitions:
 * Clear and concise definitions are offered, allowing users to gain a better understanding of the word's precise meaning and usage.
 <br>
 <img src="assets/rm-images/definitions.png"  width="400"/>
 
-**Examples:**
+### Example usage:
 * The application supplies usage examples, providing real-world context for the word's application in sentences.
 <br>
 <img src="assets/rm-images/examples.png"  width="400"/>
 
-**User-Friendly Interface:** 
+### User-Friendly Interface: 
 * The user interface is designed for simplicity and ease of use. After the word is submitted, the interface dynamically updates to display the entered word, its synonyms, definitions, and examples. This seamless transition enriches the user experience, making it easy for users to explore and understand the world of words.
 <br>
 
@@ -133,6 +166,70 @@
 * WordAPI is currently restricted for 3/4/5 results, I would like to add a 'read more..' button to show more definition, synonym and example for the user.
 * Implementing mini games with words for younger generation, or anyone who likes to play word games !
 
+# Tools & Documentations :
+
+### Version control & hosting:
+
+**[Github](https://github.com)**
+* Used for version control throughout the whole project
+
+**[GitPod](https://github.com)**
+* Used as an online editor to code the project
+
+**[Github Pages](https://github.com)**
+* Used for hosting everything for the project, creating a live link for the users
+
+### Design & image editing
+
+**[Adobe Photoshop](https://www.adobe.com/)**
+
+* Compressing and risizing images.
+
+**[EzGif](https://ezgif.com/video-to-gif)**
+
+* Video to gif conversion.
+
+**[Techsini Mockup](https://techsini.com/multi-mockup/)**
+
+* Create a multi screen size screenshot.
+
+**[Real Favicon Generator](https://realfavicongenerator.net/)**
+
+* Creating favicon from an image.
+
+**[MacOS Screenshot & Screen recording](https://support.apple.com/en-gb/guide/mac-help/mh26782/mac)**
+
+* Used for screen recording and screenshots.
+
+### SEO:
+
+**[Meta tag & Opengraph tool](https://metatags.io/)**
+
+* Generating meta tags and Opengraph protocol for the project
+
+
+
+### Documentations:
+
+* **[Bootstrap docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)**
+
+* **[WordsAPI docs](https://rapidapi.com/dpventures/api/wordsapi)**
+
+* **[Random Words API docs](https://rapidapi.com/sheharyar566/api/random-words5/)**
+
+* **[jQuery docs](https://api.jquery.com/)**
+
+* **[Markdown docs](https://www.markdownguide.org/cheat-sheet/)**
+
+# API's (Application Programming Interface): 
+
+**[Random Word](https://rapidapi.com/sheharyar566/api/random-words5)**
+* Used to generate random word for "Today's word selection"
+
+**[WordsAPI](https://rapidapi.com/dpventures/api/wordsapi)**
+* Used as the brain of the project for the main functionality
+* Calling this api with the value of the user input, presenting synonyms, definitions and examples to the user
+
 
 # Deployment:
 
@@ -145,6 +242,9 @@
 
 - Step by step guide for creating a live link with the help of [Github Pages](https://pages.github.com/)
   - ![Github pages tutorial gif](assets/rm-images/pages2.gif)
+
+
+# Testing:
   
 
 

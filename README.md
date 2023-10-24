@@ -72,7 +72,7 @@
 
 * To ensure that the loading time is less noticable and maintain the project's cohesive visual theme.
 <br>
-<img src="https://i.gifer.com/XZ5V.gif"  width="300"/>
+<img src="https://i.gifer.com/XZ5V.gif"  width="200"/>
 <!-- add image here -->
 **Background animation:**
 *  This animation uses keyframes to create the illusion of the background image moving down the page. By smoothly transitioning the background position, it adds a dynamic and visually appealing element to the design.

@@ -1,12 +1,8 @@
-### [Live link](https://parduckids.github.io/milestone-project-two)
+# Word Wide 
+* [Live link](https://parduckids.github.io/milestone-project-two)
+* [Wireframes and Sitemap](https://share.balsamiq.com/c/8obJqRrkHdLQWv489UPKAP.png)
+* [GitHub Repository](https://github.com/parduckids/milestone-project-two)
 
-### [Wireframes and Sitemap](https://share.balsamiq.com/c/8obJqRrkHdLQWv489UPKAP.png)
-
-### [GitHub Repository](https://github.com/parduckids/milestone-project-two)
-
-
-
-<!-- Screenshot on different devices  -->
 ![image](assets/rm-images/screens.gif)
 ### 'Word Wide' is a functional and minimalist synonym website. It stands out with a unique, quirky style, featuring animated background. Breaking away from the standard format of synonym sites; it provides word definitions, example words, synonyms based on user input, and even included a fun random word generator. I've used WordsAPI and Random Words API for synonyms and random words to make it interactive and engaging.
 
@@ -39,7 +35,7 @@
 
 ## Typography
 * I use '[Roboto Mono]' throughout the website , which carries the same contemporary and unassuming design as the rest of the "Roboto" family. Its clean lines and minimalistic letterforms create a modern and professional appearance.
-* The font is hosted on https://fonts.google.com/
+* The font is importad from [Google Fonts](https://fonts.google.com/)
 
 ## Imagery
 **Typing Monster Gif:**
@@ -67,10 +63,12 @@
 **Preloader with animated star gif:**
 
 * To ensure that the loading time is less noticable and maintain the project's cohesive visual theme.
+<img src="https://i.gifer.com/XZ5V.gif" alt="preloading" width="200"/>
 <!-- add image here -->
-**Background scroll animation:**
+**Background animation:**
 *  This animation uses keyframes to create the illusion of the background image moving down the page. By smoothly transitioning the background position, it adds a dynamic and visually appealing element to the design.
-<!-- add image here -->
+
+![image](assets/rm-images/background-anim.gif)
 
 
 

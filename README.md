@@ -85,6 +85,8 @@
 * I created the background image on [Canva](https://canva.com), a graphic design platform.
 * The background features a dynamic composition of abstract shapes, providing a visually stimulating backdrop that complements the engaging design of the project with added css scrolling animation.
 
+* CSS scrolling effect idea came from [this blogpost](https://nikitahl.com/infinite-background-image-scroll)
+
 **Word Wide Logo:**
 
 * Created with [Canva](https://canva.com)
@@ -106,7 +108,7 @@
 
 <br>
 
-<img src="https://i.gifer.com/XZ5V.gif"  width="200"/>
+<img src="https://i.gifer.com/XZ5V.gif" alt="Preloader gif used in the project"  width="200">
 
 **Background animation:**
 *  This animation uses keyframes to create the illusion of the background image moving down the page. By smoothly transitioning the background position, it adds a dynamic and visually appealing element to the design.

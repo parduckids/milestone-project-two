@@ -106,7 +106,17 @@ Testing Mobile responsiveness with the help of **[Google Developer Tools](https:
 
 ### 6. **Other Tests**
 
-- All javascript code has been tested with: **[Google Developer Tools](https://developer.chrome.com/docs/devtools/)**
+#### All javascript code has been tested with: **[Google Developer Tools](https://developer.chrome.com/docs/devtools/)** 
+
+- Console Tab:
+    * By displaying JavaScript errors and warnings for debugging.
+    * Executing JavaScript code from the console .
+- Setting Breakpoints in Sources Tab:
+    * Click on line numbers to set breakpoints which pause code execution.
+    * When paused, I inspected variables, the call stack, and other information in the right panel.
+- Stepping Through Code
+
+
 
 ## Conclusion
 

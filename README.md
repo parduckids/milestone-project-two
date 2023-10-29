@@ -1,7 +1,8 @@
 # Word Wide 
-* [Live link](https://parduckids.github.io/milestone-project-two)
-* [Wireframes and Sitemap](https://share.balsamiq.com/c/8obJqRrkHdLQWv489UPKAP.png)
-* [GitHub Repository](https://github.com/parduckids/milestone-project-two)
+  * [Live link](https://parduckids.github.io/milestone-project-two)
+  * [Wireframes and Sitemap](https://share.balsamiq.com/c/8obJqRrkHdLQWv489UPKAP.png)
+  * [GitHub Repository](https://github.com/parduckids/milestone-project-two)
+  * [Testing docs](TESTING.md)
 
 ![image](assets/rm-images/screens.gif)
 

@@ -2,7 +2,10 @@
  will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
  */
 $(document).ready(function () {
-    // Add autofocus to the input field when not on a touch screen device
+    
+    // On document load check if the  API is functioning as expected using the testApi function.
+    testApi("cat");
+    // Add autofocus to the input field when not on a touch screen device.
     if (!('ontouchstart' in document.documentElement)) {
         $('#choosen').focus();
     }
@@ -13,28 +16,28 @@ $(document).ready(function () {
         // Prevent the default link functionality.
         event.preventDefault();
 
-        // Set the clicked word as the value of the 'choosen' input field
+        // Set the clicked word as the value of the 'choosen' input field.
         $("#choosen").val($(this).text());
 
-        // Trigger a click on the 'custom-button'
+        // Trigger a click on the 'custom-button'.
         $(".custom-button").click();
     });
 
 });
 
 
-// Add a preloader to the page with a fade out effect after a short delay
+// Add a preloader to the page with a fade out effect after a short delay.
 function callPreloader() {
-    // Display the preloader element with a flex layout
+    // Display the preloader element with a flex layout.
     $('#preloader').css('display', 'flex');
 
     // Set a delay of 1.5 seconds
     setTimeout(function () {
         // Fade out function 
         $('#preloader').fadeOut('slow', function () {
-            // Hide preloader after the fade out effect
+            // Hide preloader after the fade out effect.
             $(this).hide();
-            
+
             // Allow scrolling again
             $('body').css('overflow', 'auto');
         });
@@ -60,23 +63,23 @@ async function generateRandomWords() {
     };
 
     try {
-        // Send the fetch request to the API
+        // Send the fetch request to the API.
         const response = await fetch(url, options);
 
         // Parse and store the JSON response
         const result = await response.json();
-        // General error handling when the API is down 
+        // General error handling when the API is down .
         if (result.length < 1 || response.status === 404) {
             $("#random-word-list").append('<p>This feature is currently unavailable</p>');
-        }else{
+        } else {
             // Loop through the results array
             for (let i = 0; i < result.length; i++) {
-                // For each word in the results, append it to the 'random-word-list' as a list item
-                // Each word is wrapped in an anchor tag for later functionality
+                // For each word in the results, append it to the 'random-word-list' as a list item.
+                // Each word is wrapped in an anchor tag for later functionality.
                 $("#random-word-list").append('<li><a href="#">' + result[i] + '</a></li>');
             }
         }
-        
+
     } catch (error) {
         $("#random-word-list").append('<li>This feature is currently unavailable</li>');
     }
@@ -139,10 +142,10 @@ async function fetchSynonyms(word) {
             exWrapper.hide();
             // Return false if the reuqest isn't succesfull
             return false;
-        } 
-    // Instead of logging the error, just let the user know that something went wrong, for better security
+        }
+        // Instead of logging the error, just let the user know that something went wrong, for better security
     } catch (error) {
-        exWrapper.hide();
+        return false;
     }
 }
 
@@ -202,10 +205,10 @@ async function fetchDefinitions(word) {
             exWrapper.hide();
             // Return false if the reuqest isn't succesfull
             return false;
-        }  
-    // Instead of logging the error, just let the user know that something went wrong, for better security
+        }
+        // Instead of logging the error, just let the user know that something went wrong, for better security
     } catch (error) {
-        exWrapper.hide();
+        return false;
     }
 }
 
@@ -266,9 +269,9 @@ async function fetchExamples(word) {
             // Return false if the reuqest isn't succesfull
             return false;
         }
-    
+
     } catch (error) {
-        exWrapper.hide();
+        return false;
     }
 }
 
@@ -308,28 +311,44 @@ async function fetchFromEntry(event) {
         // Check if all functions retured false at the same time
         // When no data is returned, present error message to the user
         if (!synonymExists && !exampleExists && !definitionExists) {
-            errorMessage.text("The word:"+ "'" + inputValue + "'" + "doesn't exist in our database :(");
+            errorMessage.text("The word:" + "'" + inputValue + "'" + "doesn't exist in our database :(");
             event.target.choosen.value = ''; // Clear the input field
             return; // Exit the function
-        // If any of the function returned true continue the fetchFromEntry function
-        } else{
-        
-        // If the input is not empty, use the fetchSynonyms, fetchDefinitions, fetchExamples functions to fetch data from the api using the input value
+            // If any of the function returned true continue the fetchFromEntry function
+        } else {
 
-        // Present the input value on the UI
-        choosenWord.html('Your word is: <b>' + inputValue + '</b>');
+            // If the input is not empty, use the fetchSynonyms, fetchDefinitions, fetchExamples functions to fetch data from the api using the input value
 
-        // Change label of the input after form submission
-        entryLabel.html('Try another word:');
-        // Clear the input
-        event.target.choosen.value = '';
-        // Hide gif when the button is clicked
-        $("#typing-gif").hide();
-        // Show word-data section when the function is called
-        $("#word-data").show();
-        // When the input left empty present an error message to the user
+            // Present the input value on the UI
+            choosenWord.html('Your word is: <b>' + inputValue + '</b>');
+
+            // Change label of the input after form submission
+            entryLabel.html('Try another word:');
+            // Clear the input
+            event.target.choosen.value = '';
+            // Hide gif when the button is clicked
+            $("#typing-gif").hide();
+            // Show word-data section when the function is called
+            $("#word-data").show();
+            // When the input left empty present an error message to the user
         }
     } else {
         errorMessage.text("It can't be empty :(");
+    }
+}
+// The testApi() function tests the API's functionality for a given word by checking synonyms, examples, and definitions.
+// It updates the UI to inform the user if the API is down by hiding the form and showing an error message.
+
+async function testApi(word) {
+    let synonymExists = await fetchSynonyms(word);
+    let exampleExists = await fetchExamples(word);
+    let definitionExists = await fetchDefinitions(word);
+    // Check if all functions retured false at the same time, as all using the same API
+    if (!synonymExists && !exampleExists && !definitionExists) {
+        $("#api-down").show();
+        $("#form-section").hide();
+    }else{
+        $("#api-down").hide();
+        $("#form-section").show();
     }
 }

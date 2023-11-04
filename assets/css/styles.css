@@ -82,6 +82,10 @@ input {
 #word-data{
     display: none;
 }
+/* Hide api-down if the API works as it should, only show this with javascript if there is any issue */
+#api-down{
+    display: none;
+}
 /* Preloader styling */
 #preloader {
     position: fixed;

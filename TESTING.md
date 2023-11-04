@@ -5,8 +5,9 @@
 - [2. HTML, CSS, JS tests, lighthouse tests](#2-html-css-js-tests-lighthouse-tests)
 - [3. Mobile Responsiveness Test](#3-mobile-responsiveness-test)
 - [4. Testing User Stories](#4-testing-user-stories)
-- [5. Manual Testing](#5-manual-testing)
+- [5. Manual Testing](#5-manual-testing-and-fixes)
 - [6. Other Tests](#6-other-tests)
+    - [JSHint](#javascript-validation-with-jshint)
 - [**Conclusion**](#conclusion)
 
 ## Testing Procedure
@@ -126,6 +127,19 @@ Testing Mobile responsiveness with the help of **[Google Developer Tools](https:
         - Line 81   Unnecessary semicolon.
         - 168   Missing semicolon.
         - 332   Missing semicolon.
+    - FIX:
+        * [Remove semicolon from line 81, add it to line 168 and 332](https://github.com/parduckids/milestone-project-two/commit/8b60603b3e51c5918786f88491c25b8ff2d4426a)
+<br>
+<img src="rm-images/jshint-final.png"  width="600"/>
+<br>
+    #### `fetchFromEntry` Function Notice:
+
+    * The `fetchFromEntry` function, flagged by JSHint as unused, is actually invoked through inline event handling in the form's HTML `onsubmit` attribute. This direct invocation from the HTML bypasses the need for a direct call in the JavaScript file, hence JSHint's mistaken unused variable warning.
+
+    #### One undefined variable "$"
+    * The variable `$` , representing jQuery, is defined externally in the HTML file through the inclusion of the jQuery library. JSHint does not recognize this by default and will flag `$` as an undefined variable. To resolve this, the directive `/* global $ */` is added at the top of the JavaScript file, which informs JSHint that `$` is a global variable and prevents the undefined variable error.
+
+
 
 
 

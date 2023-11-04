@@ -102,6 +102,7 @@ Testing Mobile responsiveness with the help of **[Google Developer Tools](https:
     * [Test: if fetchExamples function retrieves and log API data based on input](https://github.com/parduckids/milestone-project-two/commit/c4841273003927626f6d296e4366229d2d292926)
     * [Test: if generateRandomWords function retrieves and log API data based on input](https://github.com/parduckids/milestone-project-two/commit/589ba4c8635030aec4f4580f8d9eccc55a46b819)
     * [Fix: remove all console.error for security reasons, change it to an alert for better user experience](https://github.com/parduckids/milestone-project-two/commit/07b3628e6ad7e7cb4d92d4c2de4477f52e075944)
+    * [Fix: error message wasn't visible enough, make the font-size larger](https://github.com/parduckids/milestone-project-two/commit/465d1338e06b7805b69c238fc0bdcc525c0dedb6)
     
 
 

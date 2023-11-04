@@ -138,22 +138,24 @@
 <img src="rm-images/random-words.png"  width="400"/>
 
 ### Fetching Word Information: 
+<img src="rm-images/word.png"  width="400"/>
+<br>
 * After a user submits a word, the application fetches comprehensive information about the term, including:
 
-### Synonyms:
-* The application provides a list of synonyms, helping users discover alternative words with similar meanings.
-<br>
-<img src="rm-images/similar.png"  width="400"/>
+  ### Synonyms:
+  * The application provides a list of synonyms, helping users discover alternative words with similar meanings.
+  <br>
+    <img src="rm-images/similar.png"  width="400"/>
 
-### Definitions:
-* Clear and concise definitions are offered, allowing users to gain a better understanding of the word's precise meaning and usage.
-<br>
-<img src="rm-images/definitions.png"  width="400"/>
+  ### Definitions:
+  * Clear and concise definitions are offered, allowing users to gain a better understanding of the word's precise meaning and usage.
+  <br>
+  <img src="rm-images/definitions.png"  width="400"/>
 
-### Example usage:
-* The application supplies usage examples, providing real-world context for the word's application in sentences.
-<br>
-<img src="rm-images/examples.png"  width="400"/>
+  ### Example usage:
+  * The application supplies usage examples, providing real-world context for the word's application in sentences.
+  <br>
+  <img src="rm-images/examples.png"  width="400"/>
 
 ### User-Friendly Interface: 
 * The user interface is designed for simplicity and ease of use. After the word is submitted, the interface dynamically updates to display the entered word, its synonyms, definitions, and examples. This seamless transition enriches the user experience, making it easy for users to explore and understand the world of words.

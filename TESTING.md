@@ -30,13 +30,13 @@
 
 #### W3C HTML Validator
 - All tests passed with [The W3C Markup Validation Service](https://validator.w3.org/)
-![Testing with W3C HTML Validator](assets/rm-images/html-test.png)
+![Testing with W3C HTML Validator](rm-images/html-test.png)
 #### W3C CSS Validator
 - All tests passed with [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-![Testing with W3C CSS Validator](assets/rm-images/css-test.png)
+![Testing with W3C CSS Validator](rm-images/css-test.png)
 #### Lighthouse
 Tested with [Lighthouse report](https://developer.chrome.com/docs/lighthouse/overview/)
-![Testing with Lighthouse](assets/rm-images/lighthouse-test.png)
+![Testing with Lighthouse](rm-images/lighthouse-test.png)
 
 
 
@@ -64,15 +64,15 @@ Testing Mobile responsiveness with the help of **[Google Developer Tools](https:
   
   - Iphone 12 mini physical device:
 
-  <img src="assets/rm-images/start-mobile.JPG" alt="Home screen on mobile"  width="400"/>
+  <img src="rm-images/start-mobile.JPG" alt="Home screen on mobile"  width="400"/>
  
-  <img src="assets/rm-images/active-mobile.JPG" alt="Active screen on mobile"  width="400"/>
+  <img src="rm-images/active-mobile.JPG" alt="Active screen on mobile"  width="400"/>
 
   - Ipad Pro physical device:
 
-  <img src="assets/rm-images/start-ipad.jpg" alt="Start screen on iPad"  width="400"/>
+  <img src="rm-images/start-ipad.jpg" alt="Start screen on iPad"  width="400"/>
 
-  <img src="assets/rm-images/active-ipad.jpg" alt="Active screen on iPad"  width="400"/>
+  <img src="rm-images/active-ipad.jpg" alt="Active screen on iPad"  width="400"/>
 
 ### 4. **Testing User Stories**
 
@@ -115,6 +115,18 @@ Testing Mobile responsiveness with the help of **[Google Developer Tools](https:
     * Click on line numbers to set breakpoints which pause code execution.
     * When paused, I inspected variables, the call stack, and other information in the right panel.
 - Stepping Through Code
+
+#### Javascript validation with [JSHint](https://jshint.com/):
+
+- First Test:
+<br>
+<img src="rm-images/jshint-first.png"  width="600"/>
+<br>
+    - Three warnings
+        - Line 81   Unnecessary semicolon.
+        - 168   Missing semicolon.
+        - 332   Missing semicolon.
+
 
 
 

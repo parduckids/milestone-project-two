@@ -126,6 +126,7 @@ async function fetchSynonyms(word) {
             // Hide part of the view when not available information for that section
             if (result.synonyms.length < 1) {
                 synWrapper.hide();
+                return false;
             } else {
                 synWrapper.show();
 
@@ -190,6 +191,7 @@ async function fetchDefinitions(word) {
             // Hide part of the view when not available information for that section
             if (result.definitions.length < 1) {
                 defWrapper.hide();
+                return false;
             } else {
                 defWrapper.show();
             }
@@ -253,6 +255,7 @@ async function fetchExamples(word) {
             // Hide part of the view when not available information for that section
             if (result.examples.length < 1) {
                 exWrapper.hide();
+                return false;
             } else {
                 exWrapper.show();
             }

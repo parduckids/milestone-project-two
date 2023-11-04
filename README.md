@@ -43,10 +43,9 @@
   * [Documentations](#documentations)
   * [Application Programming Interfaces 'API's'](#apis-application-programming-interface)
 - [Deployment](#deployment)  
-- [Testing](#testing)
-  * [Manual Testing]()
-  * [Testing tools]()
 - [Credits & Acknowledgements](#credits--acknowledgements)
+  * [Credits](#credits)
+  * [Acknowledgements](#acknowledgements)
 ---
 
 # User Experience:
@@ -244,6 +243,7 @@
 
 
 - Guide for running the code on [Gitpod](https://www.gitpod.io/)
+<br>
 ![Gitpod tutorial gif](rm-images/gitpod2.gif)
 
   - **Navigate to Your GitHub Project:** Go to the GitHub page of the project you want to work on.
@@ -254,6 +254,7 @@
 
 - Step by step guide for creating a live link with the help of [Github Pages](https://pages.github.com/)
 ![Github pages tutorial gif](rm-images/pages2.gif)
+
   - **Choose Your Project:** Navigate to the GitHub repository of the project you want to publish.
   - **Open Repository Settings:** Click on the "Settings" tab near the top of the repository page.
   - **Locate GitHub Pages Section:** Scroll down to the "Pages" section in the settings menu.
@@ -265,5 +266,19 @@
 
 
 # Credits & Acknowledgements
+
+## Credits
+- **[Bootstrap](https://getbootstrap.com/)**: For providing the essential tools to craft an intuitive and responsive user interface.
+- **[RapidAPI](https://rapidapi.com/)**: For their comprehensive API Marketplace, which has provided the API's used in this project.
+- **[jQuery](https://jquery.com/)**: For their robust library that has enabled me to enhance user interactions on my project.
+- **[CodeInstitute](https://codeinstitute.net/)**: For their  [Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template) that made the coding experience as smooth as possible. 
+
+
+## Acknowledgements
+* I'd like to thank to my mentor Chris Quinn for helping me make this project better. 
+* Also thank you to Code Institute & Bristol College team , especially for 	Manuel Perez for continous support. 
+
+
+**Adam Voros | 2023**
 
 

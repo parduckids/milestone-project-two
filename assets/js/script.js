@@ -117,7 +117,7 @@ async function fetchSynonyms(word) {
                 $("#synonyms").append('<li>' + result.synonyms[i] + '</li>');
             }
             // Hide part of the view when not available information for that section
-            if (result.synonyms.length < 1) {
+            if (result.synonyms.length < 1 || response.status === 404){
                 synWrapper.hide();
             } else {
                 synWrapper.show();
@@ -179,7 +179,7 @@ async function fetchDefinitions(word) {
                 $("#definitions").append('<p>' + result.definitions[i].definition + '</p>');
             }
             // Hide part of the view when not available information for that section
-            if (result.definitions.length < 1) {
+            if (result.synonyms.length < 1 || response.status === 404){
                 defWrapper.hide();
             } else {
                 defWrapper.show();
@@ -241,7 +241,7 @@ async function fetchExamples(word) {
                 $("#examples").append('<p>' + result.examples[i] + '</p>');
             }
             // Hide part of the view when not available information for that section
-            if (result.examples.length < 1) {
+            if (result.synonyms.length < 1 || response.status === 404){
                 exWrapper.hide();
             } else {
                 exWrapper.show();

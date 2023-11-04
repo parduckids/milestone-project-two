@@ -102,7 +102,7 @@ async function fetchSynonyms(word) {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'fe209f256emshc114ceae6c6c116p1d872djsn27d575353cc3',
-            'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
+            'X-RapidAPI-Host': 'wordsapiv12.p.rapidapi.com'
         }
     };
     try {
@@ -165,7 +165,7 @@ async function fetchDefinitions(word) {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'fe209f256emshc114ceae6c6c116p1d872djsn27d575353cc3',
-            'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
+            'X-RapidAPI-Host': 'wordsapiv12.p.rapidapi.com'
         }
     };
     try {
@@ -229,7 +229,7 @@ async function fetchExamples(word) {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'fe209f256emshc114ceae6c6c116p1d872djsn27d575353cc3',
-            'X-RapidAPI-Host': 'wordsapiv1.p.rapidapi.com'
+            'X-RapidAPI-Host': 'wordsapiv12.p.rapidapi.com'
         }
     };
     try {

@@ -7,6 +7,8 @@
     --customWhite: #FFFFF0;
     --customRed: #ED241F;
     --customDark: #212121;
+    /* Modify default bootstrap background color that's used as a fallback background  */
+    --bs-body-bg: #212121 !important;
   }
 
 * {

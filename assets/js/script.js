@@ -77,7 +77,7 @@ async function generateRandomWords() {
         // If an error occurs, log it to the console
         console.error(error);
     }
-};
+}
 
 
 /*
@@ -164,7 +164,7 @@ async function fetchDefinitions(word) {
     };
     try {
         // Create a variable for definitions-wrapper for later use
-        let defWrapper = $("#definitions-wrapper")
+        let defWrapper = $("#definitions-wrapper");
         // Send a fetch request to the API
         const response = await fetch(url, options);
         // Check if the response was successful
@@ -328,6 +328,6 @@ async function fetchFromEntry(event) {
         // When the input left empty present an error message to the user
         }
     } else {
-        errorMessage.text("It can't be empty :(")
+        errorMessage.text("It can't be empty :(");
     }
 }

@@ -65,16 +65,20 @@ async function generateRandomWords() {
 
         // Parse and store the JSON response
         const result = await response.json();
-
-        // Loop through the results array
-        for (let i = 0; i < result.length; i++) {
-            // For each word in the results, append it to the 'random-word-list' as a list item
-            // Each word is wrapped in an anchor tag for later functionality
-            $("#random-word-list").append('<li><a href="#">' + result[i] + '</a></li>');
+        // General error handling when the API is down 
+        if (result.length < 1 || response.status === 404) {
+            $("#random-word-list").append('<p>This feature is currently unavailable</p>');
+        }else{
+            // Loop through the results array
+            for (let i = 0; i < result.length; i++) {
+                // For each word in the results, append it to the 'random-word-list' as a list item
+                // Each word is wrapped in an anchor tag for later functionality
+                $("#random-word-list").append('<li><a href="#">' + result[i] + '</a></li>');
+            }
         }
-
+        
     } catch (error) {
-        alert('Oops! Something went wrong. Please try again.');
+        $("#random-word-list").append('<li>This feature is currently unavailable</li>');
     }
 }
 
@@ -117,7 +121,7 @@ async function fetchSynonyms(word) {
                 $("#synonyms").append('<li>' + result.synonyms[i] + '</li>');
             }
             // Hide part of the view when not available information for that section
-            if (result.synonyms.length < 1 || response.status === 404){
+            if (result.synonyms.length < 1) {
                 synWrapper.hide();
             } else {
                 synWrapper.show();
@@ -127,16 +131,18 @@ async function fetchSynonyms(word) {
             return true;
             // Error handling for 404 - not found
         } else if (response.status === 404) {
+            exWrapper.hide();
             // Return false if the reuqest isn't succesfull
             return false;
         } else {
             // General error handling 
+            exWrapper.hide();
             // Return false if the reuqest isn't succesfull
             return false;
         } 
     // Instead of logging the error, just let the user know that something went wrong, for better security
     } catch (error) {
-        alert('Oops! Something went wrong. Please try again.');
+        exWrapper.hide();
     }
 }
 
@@ -179,7 +185,7 @@ async function fetchDefinitions(word) {
                 $("#definitions").append('<p>' + result.definitions[i].definition + '</p>');
             }
             // Hide part of the view when not available information for that section
-            if (result.synonyms.length < 1 || response.status === 404){
+            if (result.definitions.length < 1) {
                 defWrapper.hide();
             } else {
                 defWrapper.show();
@@ -188,17 +194,18 @@ async function fetchDefinitions(word) {
             return true;
 
         } else if (response.status === 404) {
+            exWrapper.hide();
             // Return false if the reuqest isn't succesfull
             return false;
         } else {
             // General error handling 
-
+            exWrapper.hide();
             // Return false if the reuqest isn't succesfull
             return false;
         }  
     // Instead of logging the error, just let the user know that something went wrong, for better security
     } catch (error) {
-        alert('Oops! Something went wrong. Please try again.');
+        exWrapper.hide();
     }
 }
 
@@ -241,7 +248,7 @@ async function fetchExamples(word) {
                 $("#examples").append('<p>' + result.examples[i] + '</p>');
             }
             // Hide part of the view when not available information for that section
-            if (result.synonyms.length < 1 || response.status === 404){
+            if (result.examples.length < 1) {
                 exWrapper.hide();
             } else {
                 exWrapper.show();
@@ -250,16 +257,18 @@ async function fetchExamples(word) {
             return true;
 
         } else if (response.status === 404) {
+            exWrapper.hide();
             // Return false if the reuqest isn't succesfull
             return false;
         } else {
+            exWrapper.hide();
             // General error handling 
             // Return false if the reuqest isn't succesfull
             return false;
         }
-    // Instead of logging the error, just let the user know that something went wrong, for better security
+    
     } catch (error) {
-        alert('Oops! Something went wrong. Please try again.');
+        exWrapper.hide();
     }
 }
 

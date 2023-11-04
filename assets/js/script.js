@@ -74,8 +74,7 @@ async function generateRandomWords() {
         }
 
     } catch (error) {
-        // If an error occurs, log it to the console
-        console.error(error);
+        alert('Oops! Something went wrong. Please try again.');
     }
 }
 
@@ -128,18 +127,16 @@ async function fetchSynonyms(word) {
             return true;
             // Error handling for 404 - not found
         } else if (response.status === 404) {
-            console.error("This word doesn't exist in our database");
             // Return false if the reuqest isn't succesfull
             return false;
         } else {
             // General error handling 
-            console.error('Request failed with status: ', response.status);
             // Return false if the reuqest isn't succesfull
             return false;
-        }
-        // Log any errors related to the fetch operation to the console    
+        } 
+    // Instead of logging the error, just let the user know that something went wrong, for better security
     } catch (error) {
-        console.error(error);
+        alert('Oops! Something went wrong. Please try again.');
     }
 }
 
@@ -191,18 +188,17 @@ async function fetchDefinitions(word) {
             return true;
 
         } else if (response.status === 404) {
-            console.error("This word doesn't exist in our database");
             // Return false if the reuqest isn't succesfull
             return false;
         } else {
             // General error handling 
-            console.error('Request failed with status: ', response.status);
+
             // Return false if the reuqest isn't succesfull
             return false;
-        }
-        // Log any errors related to the fetch operation to the console    
+        }  
+    // Instead of logging the error, just let the user know that something went wrong, for better security
     } catch (error) {
-        console.error(error);
+        alert('Oops! Something went wrong. Please try again.');
     }
 }
 
@@ -254,18 +250,16 @@ async function fetchExamples(word) {
             return true;
 
         } else if (response.status === 404) {
-            console.error("This word doesn't exist in our database");
             // Return false if the reuqest isn't succesfull
             return false;
         } else {
             // General error handling 
-            console.error('Request failed with status: ', response.status);
             // Return false if the reuqest isn't succesfull
             return false;
         }
-        // Log any errors related to the fetch operation to the console    
+    // Instead of logging the error, just let the user know that something went wrong, for better security
     } catch (error) {
-        console.error(error);
+        alert('Oops! Something went wrong. Please try again.');
     }
 }
 

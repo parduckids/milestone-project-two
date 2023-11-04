@@ -241,7 +241,21 @@
 
 
 - Guide for running the code on [Gitpod](https://www.gitpod.io/)
-  - ![Gitpod tutorial gif](rm-images/gitpod2.gif)
+![Gitpod tutorial gif](rm-images/gitpod2.gif)
+
+  - **Navigate to Your GitHub Project:** Go to the GitHub page of the project you want to work on.
+  -  **Click the Gitpod Button:** Find and click the Gitpod button. This button is usually located near the top of your GitHub project page, often close to the "Code" button.
+  -  **Log Into Gitpod if Necessary:** If you're not already logged in, Gitpod will ask you to log in with your account.
+  -  **Wait for the Environment to Load:** Gitpod will create a new workspace and load the project. This process might take a minute or two.
+  -  **Start Working:** Once the workspace is ready, you can begin coding, committing, and pushing changes directly from Gitpod.
 
 - Step by step guide for creating a live link with the help of [Github Pages](https://pages.github.com/)
-  - ![Github pages tutorial gif](rm-images/pages2.gif)
+![Github pages tutorial gif](rm-images/pages2.gif)
+  - **Choose Your Project:** Navigate to the GitHub repository of the project you want to publish.
+  - **Open Repository Settings:** Click on the "Settings" tab near the top of the repository page.
+  - **Locate GitHub Pages Section:** Scroll down to the "Pages" section in the settings menu.
+  - **Select Source Branch:** Choose the branch you want to publish from the "Source" dropdown menu. Typically, this is the main branch or a gh-pages branch if you have one.
+  - **Choose Folder:** Select the folder that contains your website files (like / (root) or /docs if your files are in the docs folder).
+  - **Save:** Click "Save”.
+  - **Wait for Deployment:** After saving, GitHub will begin deploying your site. It may take a few minutes.
+  - **Access Your Live Site:** Once deployed, GitHub will display a link to your live site, which will look something like https://username.github.io/repository.

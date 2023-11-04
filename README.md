@@ -46,6 +46,7 @@
 - [Testing](#testing)
   * [Manual Testing]()
   * [Testing tools]()
+- [Credits & Acknowledgements](#credits--acknowledgements)
 ---
 
 # User Experience:
@@ -261,3 +262,8 @@
   - **Save:** Click "Save”.
   - **Wait for Deployment:** After saving, GitHub will begin deploying your site. It may take a few minutes.
   - **Access Your Live Site:** Once deployed, GitHub will display a link to your live site, which will look something like https://username.github.io/repository.
+
+
+# Credits & Acknowledgements
+
+

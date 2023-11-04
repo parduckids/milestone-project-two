@@ -103,16 +103,12 @@ Testing Mobile responsiveness with the help of **[Google Developer Tools](https:
     * [Test: if generateRandomWords function retrieves and log API data based on input](https://github.com/parduckids/milestone-project-two/commit/589ba4c8635030aec4f4580f8d9eccc55a46b819)
     * [Fix: remove all console.error for security reasons, change it to an alert for better user experience](https://github.com/parduckids/milestone-project-two/commit/07b3628e6ad7e7cb4d92d4c2de4477f52e075944)
     * [Fix: error message wasn't visible enough, make the font-size larger](https://github.com/parduckids/milestone-project-two/commit/465d1338e06b7805b69c238fc0bdcc525c0dedb6)
-
     * [Fix: add error handling when the API responses are 404](https://github.com/parduckids/milestone-project-two/commit/0e673011d8b1522d6001290d64901bb1bea7a08b)
-
     * [Fix: add error handling for generateRandomWords function](https://github.com/parduckids/milestone-project-two/commit/abcca9d0dc7b58a376c9aec367643f8cb3b8b158)
-
     * [Fix: change fallback background color to a dark one for better UI experience](https://github.com/parduckids/milestone-project-two/commit/1ec0d00dc560586688bf3f9d6df2c24b21b43302)
-
     * [Fix: check if api is up and running at document load to prevent any errors](https://github.com/parduckids/milestone-project-two/commit/26d2741e90479a36b2258b19844e3220ca307c28)
-
     * [Test: simulation of an api error to check if the message is visible for the user](https://github.com/parduckids/milestone-project-two/commit/3021ff4cdb74d0dd0501c45b6b0deb02c56da449)
+    * [Fix: when the word is found by the api but does not return anything, return false](https://github.com/parduckids/milestone-project-two/commit/5f1d4a11f32b3bc4069d7c00fcbfbc7d1ce35488)
     
     
 

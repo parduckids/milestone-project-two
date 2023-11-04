@@ -4,7 +4,7 @@
   * [GitHub Repository](https://github.com/parduckids/milestone-project-two)
   * [Testing docs](TESTING.md)
 
-![image](assets/rm-images/screens.gif)
+![image](rm-images/screens.gif)
 
 
 ## The idea: 
@@ -94,11 +94,11 @@
 * The logo features a globe, a star, and the text "Word Wide." This design plays on the word "worldwide," emphasizing the global reach of the synonym web application and adding a unique visual element to the project's branding.
 
 **Favicon**
-* ![image](assets/rm-images/typography.png)
+* ![image](rm-images/typography.png)
 
 
 ## Color scheme
-![image](assets/rm-images/color-scheme.png)
+![image](rm-images/color-scheme.png)
 <!-- write about these colors and the choice  -->
 
 ## Animations and preloaders:
@@ -114,7 +114,7 @@
 **Background animation:**
 *  This animation uses keyframes to create the illusion of the background image moving down the page. By smoothly transitioning the background position, it adds a dynamic and visually appealing element to the design.
 
-![image](assets/rm-images/background-anim.gif)
+![image](rm-images/background-anim.gif)
 
 ---
 
@@ -125,17 +125,17 @@
 
 * First load:
 <br>
-<img src="assets/rm-images/input-start.png"  width="400"/>
+<img src="rm-images/input-start.png"  width="400"/>
 
 * From second load:
 <br>
-<img src="assets/rm-images/input-later.png"  width="400"/>
+<img src="rm-images/input-later.png"  width="400"/>
 
 ### Random Word Generation:
 * Upon loading the application, a selection of intriguing and random words is presented. Users can click on these words to explore their meanings and usage.
 <br>
 
-<img src="assets/rm-images/random-words.png"  width="400"/>
+<img src="rm-images/random-words.png"  width="400"/>
 
 ### Fetching Word Information: 
 * After a user submits a word, the application fetches comprehensive information about the term, including:
@@ -143,23 +143,23 @@
 ### Synonyms:
 * The application provides a list of synonyms, helping users discover alternative words with similar meanings.
 <br>
-<img src="assets/rm-images/similar.png"  width="400"/>
+<img src="rm-images/similar.png"  width="400"/>
 
 ### Definitions:
 * Clear and concise definitions are offered, allowing users to gain a better understanding of the word's precise meaning and usage.
 <br>
-<img src="assets/rm-images/definitions.png"  width="400"/>
+<img src="rm-images/definitions.png"  width="400"/>
 
 ### Example usage:
 * The application supplies usage examples, providing real-world context for the word's application in sentences.
 <br>
-<img src="assets/rm-images/examples.png"  width="400"/>
+<img src="rm-images/examples.png"  width="400"/>
 
 ### User-Friendly Interface: 
 * The user interface is designed for simplicity and ease of use. After the word is submitted, the interface dynamically updates to display the entered word, its synonyms, definitions, and examples. This seamless transition enriches the user experience, making it easy for users to explore and understand the world of words.
 <br>
 
-![image](assets/rm-images/background-anim.gif)
+![image](rm-images/background-anim.gif)
 
 
 # Extra features for the future:
@@ -241,15 +241,7 @@
 
 
 - Guide for running the code on [Gitpod](https://www.gitpod.io/)
-  - ![Gitpod tutorial gif](assets/rm-images/gitpod2.gif)
+  - ![Gitpod tutorial gif](rm-images/gitpod2.gif)
 
 - Step by step guide for creating a live link with the help of [Github Pages](https://pages.github.com/)
-  - ![Github pages tutorial gif](assets/rm-images/pages2.gif)
-
-
-
-
-  
-
-
-
+  - ![Github pages tutorial gif](rm-images/pages2.gif)

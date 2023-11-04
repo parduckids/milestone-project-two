@@ -74,7 +74,7 @@ input {
 }
 #error-message{
     color: var(--customRed) !important;
-    font-size: 0.9em !important ;
+    font-size: 1.2em !important ;
 }
 /* Hide word-data until the fetchFromEntry function is called */
 #word-data{
